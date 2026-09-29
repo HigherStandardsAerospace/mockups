@@ -11,7 +11,7 @@ Four website concepts for Higher Standards Aerospace, collected in one presentat
 | 03 · Hangar | [mockup3/](mockup3/) |
 | 04 · The Specialist | [mockup4/](mockup4/) |
 
-The gallery and all four concepts use the supplied `Logo-02.png` without recoloring or cropping. The same current artwork is used for browser icons.
+The gallery and all four concepts use the supplied `Logo-02.png` without cropping. Trajectory displays an approved white version through CSS on its dark header; the original image file and browser icons retain their supplied colors.
 
 All concepts use `#0066B7` as the primary brand blue, with lighter and darker supporting tones for readable text and interaction states.
 
