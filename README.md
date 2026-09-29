@@ -11,6 +11,8 @@ Four website concepts for Higher Standards Aerospace, collected in one presentat
 | 03 · Hangar | [mockup3/](mockup3/) |
 | 04 · The Specialist | [mockup4/](mockup4/) |
 
+The gallery and all four concepts use the supplied `Logo-02.png` without recoloring or cropping. The same current artwork is used for browser icons.
+
 All concepts use `#0066B7` as the primary brand blue, with lighter and darker supporting tones for readable text and interaction states.
 
 The index uses actual browser screenshots and opens each self-contained concept. Desktop uses a 2×2 grid; narrow screens use one column. Paths are relative for GitHub Pages hosting under `/mockups/`.

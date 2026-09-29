@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <title>HSA — Concept 03 / Hangar | Higher Standards Aerospace</title>
 <meta name="description" content="Design concept 03 for Higher Standards Aerospace: an industrial shop-floor direction in HSA brand blue and white for an FAA Part 145 aerospace component MRO in Doral, Florida.">
+<link rel="icon" type="image/png" href="assets/logo.png?v=logo02">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -46,8 +47,8 @@ h1,h2,h3,.display{font-family:'Barlow Condensed',sans-serif;text-transform:upper
 header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
 header.site.scrolled{box-shadow:0 10px 40px rgba(0,102,183,.14)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
-.brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;letter-spacing:.14em;color:var(--brand-ink)}
-.brand b{color:var(--brand)}
+.brand{display:block;width:124px;flex:0 0 auto;line-height:0}
+.brand img{display:block;width:100%;height:auto}
 .nav-links{display:flex;gap:30px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase}
 .nav-links a{color:var(--muted);position:relative;padding:6px 0;transition:color .2s}
 .nav-links a:hover{color:var(--brand-ink)}
@@ -185,8 +186,8 @@ header.site.scrolled{box-shadow:0 10px 40px rgba(0,102,183,.14)}
 /* footer */
 footer{background:var(--brand-deep);border-top:1px solid rgba(255,255,255,.08);padding:56px 0 0;color:#fff}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:44px}
-.foot-brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;letter-spacing:.14em;margin-bottom:14px;color:#fff}
-.foot-brand b{color:var(--brand-bright)}
+.foot-brand{display:inline-block;background:#fff;padding:10px 14px;margin-bottom:18px;line-height:0;border-radius:3px}
+.foot-brand img{display:block;width:158px;height:auto}
 .foot-grid p{font-size:13.5px;color:#9FB3C8;line-height:1.7;max-width:34ch}
 .foot-grid h4{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;margin-bottom:18px;color:var(--brand-bright)}
 .foot-grid ul{list-style:none;display:grid;gap:10px;font-size:13.5px;color:#9FB3C8}
@@ -213,7 +214,8 @@ footer{background:var(--brand-deep);border-top:1px solid rgba(255,255,255,.08);p
   .foot-grid{grid-template-columns:1fr}
   .sec{padding:80px 0}
 }
-@media(max-width:540px){.nav .brand{font-size:26px}.nav>.btn.small{font-size:12px;padding:10px 12px;letter-spacing:.07em}}
+@media(max-width:540px){.nav .brand{width:104px}.nav>.btn.small{font-size:12px;padding:10px 12px;letter-spacing:.07em}}
+@media(max-width:380px){.nav{padding-left:20px;padding-right:20px;gap:8px}.nav .brand{width:82px}.nav>.btn.small{font-size:11px;padding:10px 8px;letter-spacing:.02em}.menu-toggle{font-size:10px;padding:10px 8px;letter-spacing:.04em}}
 </style>
 </head>
 <body>
@@ -227,7 +229,7 @@ footer{background:var(--brand-deep);border-top:1px solid rgba(255,255,255,.08);p
 
 <header class="site" id="siteHeader">
   <div class="container nav">
-    <a class="brand" href="#top">HSA<b>.</b></a>
+    <a class="brand" href="#top" aria-label="Higher Standards Aerospace home"><img src="assets/logo.png?v=logo02" width="751" height="359" alt="Higher Standards Aerospace"></a>
     <nav class="nav-links" id="mainNav" aria-label="Main navigation">
       <a href="#specialties">Specialties</a>
       <a href="#process">Process</a>
@@ -423,7 +425,7 @@ footer{background:var(--brand-deep);border-top:1px solid rgba(255,255,255,.08);p
   <div class="container">
     <div class="foot-grid">
       <div>
-        <div class="foot-brand">HSA<b>.</b></div>
+        <a class="foot-brand" href="#top" aria-label="Higher Standards Aerospace home"><img src="assets/logo.png?v=logo02" width="751" height="359" alt="Higher Standards Aerospace" loading="lazy"></a>
         <p>Where quality and service are standard.<br>Repair and overhaul of aircraft fuel, engine, APU and airframe components.</p>
       </div>
       <div><h4>Shop</h4><ul><li><a href="#specialties">Specialties</a></li><li><a href="#process">Process</a></li><li><a href="#reliability">Reliability</a></li><li><a href="#approvals">Approvals</a></li></ul></div>
