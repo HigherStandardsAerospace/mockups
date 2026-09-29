@@ -10,12 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F5F8FB; --panel:#FFFFFF; --panel2:#E9F0F7;
-  --line:rgba(10,42,80,.12); --line2:rgba(10,42,80,.26);
-  --brand:#00488c; --brand-bright:#2E9BDB; --brand-deep:#0A1A2B; --brand-ink:#0A1F3D;
-  --brand-dim:rgba(0,72,140,.1);
+  --bg:#F5F8FB; --panel:#FFFFFF; --panel2:#E9F1F7;
+  --line:rgba(0,66,119,.12); --line2:rgba(0,66,119,.26);
+  --brand:#0066b7; --brand-bright:#72B4E8; --brand-deep:#0A1A2B; --brand-ink:#0A1F3D;
+  --brand-dim:rgba(0,102,183,.1);
   --paper:#0E1E33; --muted:#5B6E82;
-  --shadow:0 24px 70px rgba(0,72,140,.14);
+  --shadow:0 24px 70px rgba(0,102,183,.14);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -44,7 +44,7 @@ h1,h2,h3,.display{font-family:'Barlow Condensed',sans-serif;text-transform:upper
 
 /* header */
 header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
-header.site.scrolled{box-shadow:0 10px 40px rgba(0,72,140,.14)}
+header.site.scrolled{box-shadow:0 10px 40px rgba(0,102,183,.14)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
 .brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;letter-spacing:.14em;color:var(--brand-ink)}
 .brand b{color:var(--brand)}
@@ -54,7 +54,7 @@ header.site.scrolled{box-shadow:0 10px 40px rgba(0,72,140,.14)}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--brand);transition:width .25s}
 .nav-links a:hover::after{width:100%}
 .menu-toggle{display:none;border:1px solid var(--line2);background:transparent;color:var(--brand-ink);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:11px 9px;cursor:pointer}
-.menu-toggle:focus-visible,.nav-links a:focus-visible{outline:3px solid var(--brand-bright);outline-offset:4px}
+.menu-toggle:focus-visible,.nav-links a:focus-visible{outline:3px solid var(--brand);outline-offset:4px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.1em;font-size:17px;font-weight:700;padding:15px 32px;border:1px solid transparent;cursor:pointer;transition:all .25s ease}
 .btn:hover{transform:translateY(-2px)}
 .btn-brand{background:var(--brand);color:#fff}
@@ -66,7 +66,7 @@ header.site.scrolled{box-shadow:0 10px 40px rgba(0,72,140,.14)}
 /* hero */
 .hero{position:relative;min-height:94vh;display:flex;align-items:center;overflow:hidden;background:var(--brand-deep)}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,18,36,.97) 20%,rgba(0,60,120,.78) 55%,rgba(0,72,140,.42) 100%)}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(4,18,36,.97) 20%,rgba(0,82,147,.78) 55%,rgba(0,102,183,.42) 100%)}
 .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 90% 80% at 30% 50%,black 30%,transparent 75%)}
 .hero-inner{position:relative;z-index:2;padding:80px 0;max-width:1240px;margin:0 auto;padding-left:28px;padding-right:28px;width:100%;color:#fff}
 .hero .kicker{color:var(--brand-bright)}
@@ -79,7 +79,7 @@ header.site.scrolled{box-shadow:0 10px 40px rgba(0,72,140,.14)}
 .finder::before{content:"";position:absolute;top:-1px;left:-1px;width:26px;height:26px;border-top:3px solid var(--brand);border-left:3px solid var(--brand);border-top-left-radius:6px}
 .finder::after{content:"";position:absolute;bottom:-1px;right:-1px;width:26px;height:26px;border-bottom:3px solid var(--brand);border-right:3px solid var(--brand);border-bottom-right-radius:6px}
 .finder-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.finder-label .kicker{font-size:10px}
+.finder-label .kicker{font-size:10px;color:var(--brand)}
 .finder-row{display:flex;gap:12px}
 .finder-row input{flex:1;background:var(--bg);border:1px solid var(--line2);color:var(--paper);font-family:'IBM Plex Mono',monospace;font-size:15px;padding:16px 18px;border-radius:3px;letter-spacing:.04em}
 .finder-row input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-dim)}
@@ -114,7 +114,7 @@ header.site.scrolled{box-shadow:0 10px 40px rgba(0,72,140,.14)}
 .spec p{color:var(--muted);font-size:14.5px;line-height:1.7}
 .spec .tagrow{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
 .spec .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line2);color:var(--muted);padding:6px 12px;border-radius:100px}
-.spec.flagship{background:linear-gradient(135deg,#E4EEF8 0%,#ffffff 100%);border-color:rgba(0,72,140,.45)}
+.spec.flagship{background:linear-gradient(135deg,#E4EFF8 0%,#ffffff 100%);border-color:rgba(0,102,183,.45)}
 .spec .flag{position:absolute;top:22px;right:22px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;background:var(--brand);color:#fff;padding:7px 12px;font-weight:600;text-transform:uppercase}
 
 /* process */
@@ -173,7 +173,7 @@ header.site.scrolled{box-shadow:0 10px 40px rgba(0,72,140,.14)}
 .story p b{color:var(--paper)}
 
 /* contact */
-.contact{background:linear-gradient(180deg,#E4EEF8 0%,#F5F8FB 100%);border-top:1px solid var(--line);text-align:center}
+.contact{background:linear-gradient(180deg,#E4EFF8 0%,#F5F8FB 100%);border-top:1px solid var(--line);text-align:center}
 .contact h2{font-size:clamp(52px,8vw,110px);margin:18px 0 16px;color:var(--brand-ink)}
 .contact h2 em{font-style:normal;color:var(--brand)}
 .contact p{color:var(--muted);font-size:16px;max-width:56ch;margin:0 auto 36px;line-height:1.7}
