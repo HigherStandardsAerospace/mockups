@@ -54,6 +54,22 @@
     });
   }
 
+  const newsletterDialog = $('#newsletter-dialog');
+  const newsletterTrigger = $('.newsletter-trigger');
+  if (newsletterDialog && newsletterTrigger) {
+    newsletterTrigger.addEventListener('click', () => {
+      menuButton?.setAttribute('aria-expanded', 'false');
+      menuButton?.setAttribute('aria-label', 'Open navigation');
+      nav?.classList.remove('open');
+      document.body.classList.remove('menu-open');
+      newsletterDialog.showModal();
+    });
+    $('.newsletter-close', newsletterDialog).addEventListener('click', () => newsletterDialog.close());
+    newsletterDialog.addEventListener('close', () => {
+      (window.matchMedia('(max-width: 900px)').matches ? menuButton : newsletterTrigger)?.focus();
+    });
+  }
+
   let catalogPromise;
   const loadCatalog = () => {
     if (!catalogPromise) {

@@ -8,3 +8,50 @@
 
 /* Understated link feedback without decorative arrow icons. */
 .text-link{transition:color .2s,border-color .2s}.text-link:hover{color:var(--blue)}.people-band .text-link:hover{color:#b3d1e9}.header-quote:hover,.footer-top a:hover{text-decoration:underline;text-underline-offset:5px}.additional-services>a:hover,.authority-row>a:hover{color:var(--blue)}.finder-form button:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* Mia's homepage review, HSAEDITS.pdf. Reuse HSA's existing Adobe Eurostile kit. */
+.home-page{--blue:#0066b7}
+.home-page .header-inner{position:relative}
+.home-page .brand{position:absolute;left:50%;transform:translateX(-50%);z-index:1}
+.home-page #site-nav{width:100%;margin:0;justify-content:space-between;gap:180px}
+.home-page .nav-left,.home-page .nav-right{display:flex;align-items:center;gap:26px}
+.home-page #site-nav a,.newsletter-trigger{font-size:13px;padding:13px 0}
+.newsletter-trigger{border:0;background:none;color:inherit}
+.newsletter-trigger:hover{text-decoration:underline;text-underline-offset:5px}
+.home-page #site-nav .header-quote{padding-left:20px}
+.home-page .hero-heading h1,.home-page .hero-heading h1 em,.home-page .expertise-section .section-heading h2,.home-page .expertise-section .section-heading h2 em{font-family:eurostile,var(--sans);font-style:normal;font-weight:400;letter-spacing:-.015em;line-height:1.12}
+.home-page .hero-heading h1{font-size:clamp(34px,4vw,56px)}
+.home-page .hero-heading{margin:22px 0 36px;align-items:center}
+.home-page .expertise-section .section-heading{grid-template-columns:1.5fr 1fr;gap:50px}
+.home-page .expertise-section .section-heading h2{font-size:clamp(28px,2.6vw,36px)}
+#newsletter-dialog{width:calc(100% - 40px);max-width:480px;border:1px solid var(--line);padding:30px;background:var(--paper);color:var(--ink)}
+#newsletter-dialog::backdrop{background:#152f4080}
+#newsletter-dialog h2{font-size:32px;margin:18px 0}
+.newsletter-close{display:block;margin:0 0 24px auto;background:none;border:0;padding:8px;color:var(--ink)}
+@media(max-width:1100px){.home-page .nav-left,.home-page .nav-right{gap:16px}.home-page #site-nav{gap:150px}.home-page #site-nav a,.home-page .newsletter-trigger{font-size:12px}}
+@media(max-width:900px){
+ .home-page .header-inner{height:82px;justify-content:flex-end}
+ .home-page .menu-toggle{display:flex;align-items:center;gap:8px;font-size:12px;border:0;background:none;padding:12px 0}
+ .home-page .brand,.home-page .brand img{width:111px}.home-page .brand img{height:auto}
+ .home-page #site-nav{display:none;position:absolute;top:82px;left:0;right:0;width:100%;background:var(--paper);padding:15px 24px 24px;border-bottom:1px solid var(--line)}
+ .home-page #site-nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}
+ .home-page .nav-left,.home-page .nav-right{display:contents}
+ .home-page #site-nav a,.home-page .newsletter-trigger{display:block;text-align:left;font-size:17px;padding:16px 0;border:0;border-bottom:1px solid var(--line)}
+ .home-page #site-nav .header-quote{margin:0;padding:16px 0}
+}
+@media(max-width:540px){.home-page .hero-heading h1{font-size:34px}.home-page .expertise-section .section-heading{grid-template-columns:1fr;gap:22px}.home-page .expertise-section .section-heading h2{font-size:28px}}
+
+/* Original authority marks accompany the existing document links. */
+.home-page .authority-row{gap:24px}
+.home-page .authority-row>a{font-size:26px}
+.home-page .authority-row .authority-logo{display:flex;align-items:center;justify-content:flex-start;height:112px;margin:0 0 22px;letter-spacing:0}
+.home-page .authority-logo img{width:auto;height:auto;max-width:100%;max-height:100px;object-fit:contain}
+.home-page .authority-logo img[src$="easa.png"]{max-width:200px}
+.home-page .authority-logo img[src$="caac.png"]{max-width:240px;width:100%}
+.home-page .authority-row .authority-name{font-size:26px;color:var(--ink);line-height:1.2;margin:0;letter-spacing:-.025em}
+.home-page .authority-row .authority-country{margin-top:10px}
+@media(max-width:540px){.home-page .authority-row{gap:28px 20px}.home-page .authority-logo img[src$="easa.png"]{max-width:100%}.home-page .authority-row .authority-name{font-size:23px}}
+
+/* Center authority marks and their captions within each column. */
+.home-page .authority-row>a{text-align:center}
+.home-page .authority-row .authority-logo{justify-content:center}
