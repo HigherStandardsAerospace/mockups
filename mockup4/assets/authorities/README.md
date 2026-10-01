@@ -18,3 +18,8 @@ The homepage now uses the four transparent PNG originals supplied in Slack, with
 
 
 The prior source assets remain available; only the homepage references changed.
+
+## Complete FAA seal correction (2026-10-01)
+
+Both homepage and Quality now use faa-black-complete.png (1024 × 1024). This replaces the truncated supplied FAA image with a source-faithful black conversion of the complete original authorized by the user. Transparent canvas retains 48px margins around the complete seal.
+SHA256: 2e50524dc05cf6803c2da30620e4133b1d1001e00c886fe2902e4a27e6cf604c
