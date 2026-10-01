@@ -54,3 +54,10 @@
 /* Center authority marks and their captions within each column. */
 .home-page .authority-row>a{text-align:center}
 .home-page .authority-row .authority-logo{justify-content:center}
+
+/* Supplied black authority originals accompany each certificate. */
+.document-list .document-authority{width:160px;flex:none;text-align:center}
+.document-list .document-logo{height:100px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.document-list .document-logo img{width:auto;height:auto;max-width:160px;max-height:90px;object-fit:contain}
+.document-list .document-authority strong{display:block;width:auto;min-width:0;font-size:24px;line-height:1.2}
+@media(max-width:540px){.document-list .document-authority{width:104px}.document-list .document-logo{height:82px}.document-list .document-logo img{max-width:104px;max-height:76px}.document-list .document-authority strong{font-size:20px}}
