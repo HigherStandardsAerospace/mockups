@@ -46,11 +46,10 @@
 .home-page .authority-row>a{font-size:26px}
 .home-page .authority-row .authority-logo{display:flex;align-items:center;justify-content:flex-start;height:112px;margin:0 0 22px;letter-spacing:0}
 .home-page .authority-logo img{width:auto;height:auto;max-width:100%;max-height:100px;object-fit:contain}
-.home-page .authority-logo img[src$="easa.png"]{max-width:200px}
-.home-page .authority-logo img[src$="caac.png"]{max-width:240px;width:100%}
+.home-page .authority-logo img[src$="easa-black.png"]{max-width:200px}
 .home-page .authority-row .authority-name{font-size:26px;color:var(--ink);line-height:1.2;margin:0;letter-spacing:-.025em}
 .home-page .authority-row .authority-country{margin-top:10px}
-@media(max-width:540px){.home-page .authority-row{gap:28px 20px}.home-page .authority-logo img[src$="easa.png"]{max-width:100%}.home-page .authority-row .authority-name{font-size:23px}}
+@media(max-width:540px){.home-page .authority-row{gap:28px 20px}.home-page .authority-logo img[src$="easa-black.png"]{max-width:100%}.home-page .authority-row .authority-name{font-size:23px}}
 
 /* Center authority marks and their captions within each column. */
 .home-page .authority-row>a{text-align:center}
