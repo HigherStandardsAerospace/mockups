@@ -74,10 +74,8 @@
 .home-page .authority-row .authority-logo{margin:0}
 
 
-/* One Eurostile heading system across every page, based on the approved home titles. */
-:root{--heading-1:clamp(34px,4vw,56px);--heading-2:clamp(28px,2.6vw,36px);--heading-3:clamp(24px,2vw,28px)}
+/* All large titles share one responsive size, as requested; semantic heading levels stay intact. */
+:root{--heading-size:clamp(28px,2.6vw,36px)}
 h1,h2,h3{font-family:var(--sans);font-style:normal;font-weight:400;line-height:1.12;letter-spacing:-.015em;text-transform:none}
-h1{font-size:var(--heading-1)}
-h2{font-size:var(--heading-2)}
-h3{font-size:var(--heading-3)}
+h1,h2,h3{font-size:var(--heading-size)}
 h1 em,h2 em,h3 em{font-family:inherit;font-style:normal;font-weight:inherit;line-height:inherit;letter-spacing:inherit}
