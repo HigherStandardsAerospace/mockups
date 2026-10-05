@@ -69,8 +69,8 @@
 @media(max-width:800px){.people-grid{grid-template-columns:1fr;gap:36px}.people-copy h2{max-width:600px}.people-band{padding-block:60px}}
 @media(max-width:540px){.people-grid{gap:30px}.people-copy h2{margin:22px 0}.people-band{padding-block:50px}}
 
-/* The authority marks carry their own names; keep the homepage row caption-free. */
-.home-page .authority-row>a{display:flex;align-items:center;justify-content:center;padding-block:28px}
+/* Keep the descriptive text below each authority mark; omit duplicate acronym titles. */
+.home-page .authority-row>a{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-block:28px}
 .home-page .authority-row .authority-logo{margin:0}
 
 
