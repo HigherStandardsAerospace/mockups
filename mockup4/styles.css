@@ -38,19 +38,18 @@
 }
 @media(max-width:540px){.home-page .expertise-section .section-heading{grid-template-columns:1fr;gap:22px}}
 
-/* Original authority marks accompany the existing document links. */
-.home-page .authority-row{gap:24px}
-.home-page .authority-row>a{font-size:26px}
-.home-page .authority-row .authority-logo{display:flex;align-items:center;justify-content:flex-start;height:112px;margin:0 0 22px;letter-spacing:0}
-.home-page .authority-logo img{width:auto;height:auto;max-width:100%;max-height:100px;object-fit:contain}
-.home-page .authority-logo img[src$="easa-black.png"]{max-width:200px}
-.home-page .authority-row .authority-name{font-size:26px;color:var(--ink);line-height:1.2;margin:0;letter-spacing:-.025em}
-.home-page .authority-row .authority-country{margin-top:10px}
-@media(max-width:540px){.home-page .authority-row{gap:28px 20px}.home-page .authority-logo img[src$="easa-black.png"]{max-width:100%}.home-page .authority-row .authority-name{font-size:23px}}
-
-/* Center authority marks and their captions within each column. */
-.home-page .authority-row>a{text-align:center}
-.home-page .authority-row .authority-logo{justify-content:center}
+/* Center the four original authority marks at one shared artwork height.
+   Compensate for their existing transparent padding without cropping or distorting them. */
+.home-page .authority-row{--authority-height:clamp(44px,4.7vw,72px);gap:24px}
+.home-page .authority-row>a{display:flex;align-items:center;justify-content:center;padding:28px 0;text-align:center}
+.home-page .authority-row .authority-logo{display:flex;align-items:center;justify-content:center;width:100%;height:112px;margin:0;letter-spacing:0}
+.home-page .authority-logo img{width:auto;height:calc(var(--authority-height)*var(--authority-scale,1));max-width:none;max-height:none;object-fit:contain;transform:translate(calc(var(--authority-height)*var(--authority-x,0)),calc(var(--authority-height)*var(--authority-y,0)))}
+.home-page .authority-logo img[src$="faa-black-complete.png"]{--authority-scale:1.103448276}
+.home-page .authority-logo img[src$="easa-black.png"]{--authority-scale:1.196694215;--authority-y:-.028925620}
+.home-page .authority-logo img[src$="uk-caa-black.png"]{--authority-scale:1.032900433;--authority-x:-.027272727;--authority-y:-.012121212}
+.home-page .authority-logo img[src$="caac-black.png"]{--authority-scale:1.043157895;--authority-x:.004210526;--authority-y:-.000526316}
+@media(max-width:800px){.home-page .authority-row{--authority-height:clamp(28px,10vw,64px);grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.home-page .authority-row{gap:28px 20px}}
 
 /* Supplied black authority originals accompany each certificate. */
 .document-list .document-authority{width:160px;flex:none;text-align:center}
@@ -69,9 +68,6 @@
 @media(max-width:800px){.people-grid{grid-template-columns:1fr;gap:36px}.people-copy h2{max-width:600px}.people-band{padding-block:60px}}
 @media(max-width:540px){.people-grid{gap:30px}.people-copy h2{margin:22px 0}.people-band{padding-block:50px}}
 
-/* Keep the descriptive text below each authority mark; omit duplicate acronym titles. */
-.home-page .authority-row>a{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-block:28px}
-.home-page .authority-row .authority-logo{margin:0}
 
 
 /* All large titles share one responsive size, as requested; semantic heading levels stay intact. */
