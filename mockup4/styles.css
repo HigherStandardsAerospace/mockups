@@ -75,3 +75,14 @@
 h1,h2,h3{font-family:var(--sans);font-style:normal;font-weight:400;line-height:1.12;letter-spacing:-.015em;text-transform:none}
 h1,h2,h3{font-size:var(--heading-size)}
 h1 em,h2 em,h3 em{font-family:inherit;font-style:normal;font-weight:inherit;line-height:inherit;letter-spacing:inherit}
+
+
+/* Split the former section-bottom space equally around the logo grid. */
+.home-page .quality-feature{--authority-edge-space:55px;padding-bottom:0}
+.home-page .authority-row{padding-block:var(--authority-edge-space)}
+@media(max-width:800px){.home-page .quality-feature{--authority-edge-space:37.5px}}
+@media(max-width:540px){.home-page .quality-feature{--authority-edge-space:30px}}
+
+/* Use the requested black panel and the same brand blue as the other titles. */
+.home-page .people-band{background:#000}
+.home-page .people-band h2 em{color:var(--blue)}
